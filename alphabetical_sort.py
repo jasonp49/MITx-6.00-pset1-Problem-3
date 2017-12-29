@@ -1,3 +1,8 @@
+# Program accepts a string of lowercase letters and 
+# returns the longest substring of letters 
+# which occur in alphabetical order.
+
+
 def check(a,b):
     lst = [a,b]
     if lst == sorted(lst):
@@ -10,6 +15,8 @@ def leng(t):
         return 0
     else:
         return 1 + leng(t[:-1])
+
+# Program only works with lowercase letters a-z
 
 print('Mash the letters a few times on the keyboard')
 s = input()
